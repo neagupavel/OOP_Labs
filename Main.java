@@ -1,29 +1,13 @@
-package Lab2.task2;
+package Lab2.task1;
 
 public class Main {
     public static void main(String[] args) {
-        Queue queue1 = new Queue();
-        Queue queue2 = new Queue(2);
+        Box box1 = new Box();
+        Box box2 = new Box(5);
+        Box box3 = new Box(5, 4, 3);
 
-        System.out.println("queue1:");
-        System.out.println(queue1.isEmpty());
-        System.out.println(queue1.isFull());
-        queue1.push(1);
-        queue1.push(2);
-        queue1.push(3);
-        System.out.println(queue1.isEmpty());
-        System.out.println(queue1.isFull());
-        System.out.println(queue1.pop()); // prints 1
-
-        System.out.println();
-        System.out.println("queue2:");
-        System.out.println(queue2.isEmpty());
-        System.out.println(queue2.isFull());
-        queue2.push(4);
-        queue2.push(5);
-        queue2.push(6);
-        System.out.println(queue2.isEmpty());
-        System.out.println(queue2.isFull());
-        System.out.println(queue2.pop()); // prints 4
+        System.out.println(String.valueOf(box1.getSurface()) + ' ' + String.valueOf(box1.getVolume()));
+        System.out.println(String.valueOf(box2.getSurface()) + ' ' + String.valueOf(box2.getVolume()));
+        System.out.println(String.valueOf(box3.getSurface()) + ' ' + String.valueOf(box3.getVolume()));
     }
 }
